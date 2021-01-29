@@ -1,0 +1,133 @@
+{
+	"info": {
+		"_postman_id": "1bf967e7-f22c-4ee9-b4e0-8fa474f63db6",
+		"name": "Spring Initiation",
+		"description": "Creo una nova col·lecció a Postman i guardo la petició: https://restcountries.eu/rest/v2/lang/es en ella.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "N1FASE 3 GET",
+			"item": [
+				{
+					"name": "Get Request with variables and local environment",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{IP}}",
+							"host": [
+								"{{IP}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Request with variables and local environment for person name",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{IP}}?name=Joan",
+							"host": [
+								"{{IP}}"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Joan"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "Crea en Postman tres entorns, \"local\", \"desenvolupament\" i \"preproducció\"."
+		},
+		{
+			"name": "https://restcountries.eu/rest/v2/lang/es",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://restcountries.eu/rest/v2/lang/es",
+					"protocol": "https",
+					"host": [
+						"restcountries",
+						"eu"
+					],
+					"path": [
+						"rest",
+						"v2",
+						"lang",
+						"es"
+					]
+				},
+				"description": "Fase1"
+			},
+			"response": []
+		},
+		{
+			"name": "N1Fase2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/v1/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						""
+					]
+				},
+				"description": "Crea una petició GET amb direcció a \"/\" que com a resposta retorni un \"HELLO WORLD\". "
+			},
+			"response": []
+		},
+		{
+			"name": "N1Fase2b",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/v1/?name=Joan",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						""
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Joan"
+						}
+					]
+				},
+				"description": "Modifica la petició anterior perquè accepte una variable per path, que sigua un nom, construint “Hello, <NOM>” "
+			},
+			"response": []
+		}
+	]
+}

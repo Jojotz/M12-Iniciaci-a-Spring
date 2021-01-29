@@ -1,0 +1,34 @@
+{
+	"info": {
+		"_postman_id": "1bf967e7-f22c-4ee9-b4e0-8fa474f63db6",
+		"name": "Spring Initiation",
+		"description": "Creo una nova col·lecció a Postman i guardo la petició: https://restcountries.eu/rest/v2/lang/es en ella.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://restcountries.eu/rest/v2/lang/es",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://restcountries.eu/rest/v2/lang/es",
+					"protocol": "https",
+					"host": [
+						"restcountries",
+						"eu"
+					],
+					"path": [
+						"rest",
+						"v2",
+						"lang",
+						"es"
+					]
+				},
+				"description": "Fase1"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
